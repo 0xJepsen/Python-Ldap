@@ -2,7 +2,7 @@ import ldap
 from pprint import pprint
 
 server_uri = SERVER_URI
-search_base = 'ou=People,dc=cs,dc=colostate,dc=edu'
+search_base = SEARCH_DN
 uid = input("Enter UID: ")
 search_filter = '(uid='+uid+')'
 print(search_filter)
